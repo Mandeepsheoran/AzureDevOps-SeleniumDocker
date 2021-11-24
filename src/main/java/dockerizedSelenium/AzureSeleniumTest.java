@@ -27,18 +27,23 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AzureSeleniumTest {
 	 WebDriver driver;
-	
+
+	 //Disabling the firefox test cases as parallel execution on azure is under paid plan
+
+//	@Parameters("browser")
 	@BeforeTest
-	@Parameters("browser")
-	public  void tearUp(String browser) throws MalformedURLException {
-	if(browser.equalsIgnoreCase("chrome")) {
+	public  void tearUp() throws MalformedURLException {
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();		
-	}else if(browser.equalsIgnoreCase("firefox")) {
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
+//	if(browser.equalsIgnoreCase("chrome")) {
+	//	WebDriverManager.chromedriver().setup();
+	//	driver = new ChromeDriver();		
+//	}
+		//else if(browser.equalsIgnoreCase("firefox")) {
+	//	WebDriverManager.firefoxdriver().setup();
+	//	driver = new FirefoxDriver();
 		 
-	}
+//	}
 	
 		driver.get("https://evisa.rop.gov.om/");
 		driver.manage().window().maximize();
