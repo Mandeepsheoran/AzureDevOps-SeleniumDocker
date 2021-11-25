@@ -73,6 +73,9 @@
 				<version>2.19.1</version>
 				<configuration>
 					<configuration>
+					  <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
 						<properties>
 							<property>
 								<name>usedefaultlisteners</name>
