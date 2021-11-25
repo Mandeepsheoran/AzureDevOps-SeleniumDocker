@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="dockerizedSelenium.AzureSeleniumTest" hash-for-method="captchaCheck">captchaCheck</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -143,26 +129,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">dockerizedSelenium.AzureSeleniumTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="captchaCheck">
-                  </a> <!-- captchaCheck -->
-                  <span class="method-name">captchaCheck</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at dockerizedSelenium.AzureSeleniumTest.captchaCheck(AzureSeleniumTest.java:75)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -243,28 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'eVisaTrackApplication')
+data.setCell(0, 1, 'contactUsText')
 data.setCell(0, 2, 'dockerizedSelenium.AzureSeleniumTest')
-data.setCell(0, 3, 4851);
+data.setCell(0, 3, 4428);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'captchaCheck')
+data.setCell(1, 1, 'eVisaTrackApplication')
 data.setCell(1, 2, 'dockerizedSelenium.AzureSeleniumTest')
-data.setCell(1, 3, 3588);
+data.setCell(1, 3, 3782);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'contactUsText')
+data.setCell(2, 1, 'titleCheck')
 data.setCell(2, 2, 'dockerizedSelenium.AzureSeleniumTest')
-data.setCell(2, 3, 2941);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'titleCheck')
-data.setCell(3, 2, 'dockerizedSelenium.AzureSeleniumTest')
-data.setCell(3, 3, 12);
+data.setCell(2, 3, 9);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -279,9 +241,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">dockerizedSelenium.AzureSeleniumTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">captchaCheck</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -297,25 +266,19 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">eVisaTrackApplication</span>
-                <span class="method-start">60522 ms</span>
+                <span class="method-start">29152 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">contactUsText</span>
-                <span class="method-start">65381 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">captchaCheck</span>
-                <span class="method-start">68323 ms</span>
+                <span class="method-start">32939 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">titleCheck</span>
-                <span class="method-start">72095 ms</span>
+                <span class="method-start">37367 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teraDown</span>
-                <span class="method-start">72108 ms</span>
+                <span class="method-start">37377 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

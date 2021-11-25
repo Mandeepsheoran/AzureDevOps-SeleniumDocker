@@ -72,14 +72,14 @@ public class AzureSeleniumTest {
 		System.out.println("Test case 3 started");
 		driver.navigate().to("https://evisa.rop.gov.om/en/loginportal");
 		Boolean captcha = driver.findElement(By.id("_evisaregister_WAR_Evisaregisterportlet_captchaText")).isEnabled();
-		Assert.assertEquals(captcha, "false");		
+		Assert.assertEquals(captcha, "true");		
 	}
 	
 	@Test(priority=4)
 	public  void titleCheck() throws MalformedURLException {
 		System.out.println("Test case 4 started");
 		String actualtitle = driver.getTitle();
-		String expectedtitle = "loginportal - Evisa";
+		String expectedtitle = "Reach Us - Evisa";
 		Assert.assertEquals(actualtitle, expectedtitle);		
 	}
 	

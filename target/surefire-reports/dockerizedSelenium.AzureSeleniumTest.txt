@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: dockerizedSelenium.AzureSeleniumTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 75.134 sec <<< FAILURE! - in dockerizedSelenium.AzureSeleniumTest
-captchaCheck(dockerizedSelenium.AzureSeleniumTest)  Time elapsed: 3.773 sec  <<< FAILURE!
-java.lang.AssertionError: expected [false] but found [true]
-	at dockerizedSelenium.AzureSeleniumTest.captchaCheck(AzureSeleniumTest.java:75)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.432 sec - in dockerizedSelenium.AzureSeleniumTest
