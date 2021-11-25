@@ -67,7 +67,7 @@ public class AzureSeleniumTest {
 		Assert.assertEquals(element, "Share your Experience");		
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3,enabled=false)
 	public  void captchaCheck() throws MalformedURLException {
 		System.out.println("Test case 3 started");
 		driver.navigate().to("https://evisa.rop.gov.om/en/loginportal");
