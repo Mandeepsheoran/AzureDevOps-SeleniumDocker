@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,6 +110,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="dockerizedSelenium.AzureSeleniumTest" hash-for-method="eVisaTrackApplication">eVisaTrackApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="dockerizedSelenium.AzureSeleniumTest" hash-for-method="googleSearch">googleSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,6 +152,13 @@
                   <a name="eVisaTrackApplication">
                   </a> <!-- eVisaTrackApplication -->
                   <span class="method-name">eVisaTrackApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleSearch">
+                  </a> <!-- googleSearch -->
+                  <span class="method-name">googleSearch</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -209,24 +221,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'contactUsText')
+data.setCell(0, 1, 'googleSearch')
 data.setCell(0, 2, 'dockerizedSelenium.AzureSeleniumTest')
-data.setCell(0, 3, 4428);
+data.setCell(0, 3, 10062);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'eVisaTrackApplication')
 data.setCell(1, 2, 'dockerizedSelenium.AzureSeleniumTest')
-data.setCell(1, 3, 3782);
+data.setCell(1, 3, 6953);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'titleCheck')
+data.setCell(2, 1, 'contactUsText')
 data.setCell(2, 2, 'dockerizedSelenium.AzureSeleniumTest')
-data.setCell(2, 3, 9);
+data.setCell(2, 3, 3165);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'titleCheck')
+data.setCell(3, 2, 'dockerizedSelenium.AzureSeleniumTest')
+data.setCell(3, 3, 87);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -266,19 +282,23 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">eVisaTrackApplication</span>
-                <span class="method-start">29152 ms</span>
+                <span class="method-start">142437 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">contactUsText</span>
-                <span class="method-start">32939 ms</span>
+                <span class="method-start">149397 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">titleCheck</span>
-                <span class="method-start">37367 ms</span>
+                <span class="method-start">152563 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">googleSearch</span>
+                <span class="method-start">152651 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teraDown</span>
-                <span class="method-start">37377 ms</span>
+                <span class="method-start">162715 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="38249" started-at="2021-11-25T15:39:01 GMT+04:00" finished-at="2021-11-25T15:39:39 GMT+04:00">
+  <suite name="Surefire suite" duration-ms="163081" started-at="2021-12-01T16:42:20 GMT+04:00" finished-at="2021-12-01T16:45:03 GMT+04:00">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="38249" started-at="2021-11-25T15:39:01 GMT+04:00" finished-at="2021-11-25T15:39:39 GMT+04:00">
+    <test name="Surefire test" duration-ms="163081" started-at="2021-12-01T16:42:20 GMT+04:00" finished-at="2021-12-01T16:45:03 GMT+04:00">
       <class name="dockerizedSelenium.AzureSeleniumTest">
-        <test-method status="PASS" signature="tearUp()[pri:0, instance:dockerizedSelenium.AzureSeleniumTest@5702b3b1]" name="tearUp" is-config="true" duration-ms="29114" started-at="2021-11-25T15:39:01 GMT+04:00" finished-at="2021-11-25T15:39:30 GMT+04:00">
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:dockerizedSelenium.AzureSeleniumTest@5b87ed94]" name="tearUp" is-config="true" duration-ms="142373" started-at="2021-12-01T16:42:20 GMT+04:00" finished-at="2021-12-01T16:44:43 GMT+04:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method status="PASS" signature="eVisaTrackApplication()[pri:1, instance:dockerizedSelenium.AzureSeleniumTest@5702b3b1]" name="eVisaTrackApplication" duration-ms="3782" started-at="2021-11-25T15:39:30 GMT+04:00" finished-at="2021-11-25T15:39:34 GMT+04:00">
+        <test-method status="PASS" signature="eVisaTrackApplication()[pri:1, instance:dockerizedSelenium.AzureSeleniumTest@5b87ed94]" name="eVisaTrackApplication" duration-ms="6953" started-at="2021-12-01T16:44:43 GMT+04:00" finished-at="2021-12-01T16:44:50 GMT+04:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eVisaTrackApplication -->
-        <test-method status="PASS" signature="contactUsText()[pri:2, instance:dockerizedSelenium.AzureSeleniumTest@5702b3b1]" name="contactUsText" duration-ms="4428" started-at="2021-11-25T15:39:34 GMT+04:00" finished-at="2021-11-25T15:39:38 GMT+04:00">
+        <test-method status="PASS" signature="contactUsText()[pri:2, instance:dockerizedSelenium.AzureSeleniumTest@5b87ed94]" name="contactUsText" duration-ms="3165" started-at="2021-12-01T16:44:50 GMT+04:00" finished-at="2021-12-01T16:44:53 GMT+04:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactUsText -->
-        <test-method status="PASS" signature="titleCheck()[pri:4, instance:dockerizedSelenium.AzureSeleniumTest@5702b3b1]" name="titleCheck" duration-ms="9" started-at="2021-11-25T15:39:38 GMT+04:00" finished-at="2021-11-25T15:39:38 GMT+04:00">
+        <test-method status="PASS" signature="titleCheck()[pri:4, instance:dockerizedSelenium.AzureSeleniumTest@5b87ed94]" name="titleCheck" duration-ms="87" started-at="2021-12-01T16:44:53 GMT+04:00" finished-at="2021-12-01T16:44:53 GMT+04:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleCheck -->
-        <test-method status="PASS" signature="teraDown()[pri:0, instance:dockerizedSelenium.AzureSeleniumTest@5702b3b1]" name="teraDown" is-config="true" duration-ms="867" started-at="2021-11-25T15:39:38 GMT+04:00" finished-at="2021-11-25T15:39:39 GMT+04:00">
+        <test-method status="PASS" signature="googleSearch()[pri:5, instance:dockerizedSelenium.AzureSeleniumTest@5b87ed94]" name="googleSearch" duration-ms="10062" started-at="2021-12-01T16:44:53 GMT+04:00" finished-at="2021-12-01T16:45:03 GMT+04:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearch -->
+        <test-method status="PASS" signature="teraDown()[pri:0, instance:dockerizedSelenium.AzureSeleniumTest@5b87ed94]" name="teraDown" is-config="true" duration-ms="358" started-at="2021-12-01T16:45:03 GMT+04:00" finished-at="2021-12-01T16:45:03 GMT+04:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teraDown -->
